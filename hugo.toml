@@ -1,6 +1,6 @@
-baseURL = "https://71588.github.io/"
+baseURL = "https://mortal-xj.github.io/"
 locale = "zh-cn"
-title = "71588"
+title = "Mortal-XJ"
 
 [pagination]
   pagerSize = 10
