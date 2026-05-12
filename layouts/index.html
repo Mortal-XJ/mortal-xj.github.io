@@ -1,17 +1,5 @@
 {{ define "main" }}
 <div class="home">
-  <header class="home-header">
-    <h1 class="home-intro">{{ .Site.Title }}</h1>
-    <p class="home-subtitle">Unity 技术专家 · 游戏开发 · 图形学</p>
-    <div class="home-social">
-      <a href="https://github.com/Mortal-XJ" target="_blank" rel="noopener" class="social-link">GitHub</a>
-    </div>
-    <div class="search-box">
-      <input type="text" id="search-input" placeholder="Search articles..." autocomplete="off">
-      <div id="search-results" class="search-results"></div>
-    </div>
-  </header>
-
   {{ range where .Paginator.Pages "Section" "posts" }}
   <article class="post-item">
     {{ with .Params.cover }}
