@@ -9,7 +9,6 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -18,10 +17,6 @@ body {
   line-height: 1.6;
   color: #1d1d1f;
   background: #fbfbfd;
-}
-
-a {
-  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 /* ===== Header ===== */
@@ -37,7 +32,7 @@ a {
 }
 
 .site-nav {
-  max-width: 720px;
+  max-width: 680px;
   margin: 0 auto;
   padding: 16px 24px;
   display: flex;
@@ -50,167 +45,38 @@ a {
   font-weight: 600;
   color: #1d1d1f;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .site-title:hover {
   color: #0071e3;
 }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .nav-link {
   font-size: 15px;
   color: #86868b;
   text-decoration: none;
-  white-space: nowrap;
+  transition: color 0.2s ease;
 }
 
 .nav-link:hover {
   color: #0071e3;
 }
 
-/* ===== Search (in nav) ===== */
-.search-box {
-  position: relative;
-}
-
-#search-input {
-  width: 180px;
-  padding: 6px 12px;
-  font-size: 14px;
-  font-family: inherit;
-  border: 1px solid #d2d2d7;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.6);
-  color: #1d1d1f;
-  outline: none;
-  transition: width 0.25s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-#search-input:focus {
-  width: 260px;
-  border-color: #0071e3;
-  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.12);
-}
-
-#search-input::placeholder {
-  color: #86868b;
-}
-
-.search-results {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 320px;
-  background: #fff;
-  border: 1px solid #d2d2d7;
-  border-radius: 12px;
-  margin-top: 6px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  z-index: 50;
-  max-height: 360px;
-  overflow-y: auto;
-}
-
-.search-item {
-  display: block;
-  padding: 12px 16px;
-  text-decoration: none;
-  border-bottom: 1px solid #f5f5f7;
-}
-
-.search-item:last-child {
-  border-bottom: none;
-}
-
-.search-item:hover {
-  background: #f5f5f7;
-}
-
-.search-item-title {
-  display: block;
-  font-size: 15px;
-  font-weight: 500;
-  color: #1d1d1f;
-}
-
-.search-item-tags {
-  display: block;
-  font-size: 13px;
-  color: #86868b;
-  margin-top: 2px;
-}
-
-.search-empty {
-  padding: 16px;
-  font-size: 14px;
-  color: #86868b;
-  text-align: center;
-}
-
 /* ===== Main Content ===== */
 main {
-  max-width: 720px;
+  max-width: 680px;
   margin: 0 auto;
   padding: 96px 24px 64px;
 }
 
-/* ===== Home Post Items ===== */
+/* ===== Home Page ===== */
 .post-item {
-  display: flex;
-  gap: 24px;
   margin-bottom: 48px;
-  align-items: flex-start;
-}
-
-.post-item-body {
-  flex: 1;
-  min-width: 0;
-}
-
-.post-cover-link {
-  flex-shrink: 0;
-}
-
-.post-cover {
-  width: 200px;
-  height: 134px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: opacity 0.2s ease;
-}
-
-.post-cover:hover {
-  opacity: 0.85;
-}
-
-.post-meta-top {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.post-date {
-  font-size: 14px;
-  color: #86868b;
-}
-
-.post-reading-time {
-  font-size: 13px;
-  color: #86868b;
-  background: #f5f5f7;
-  padding: 1px 8px;
-  border-radius: 10px;
 }
 
 .post-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 8px;
@@ -220,38 +86,24 @@ main {
 .post-title a {
   color: #1d1d1f;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .post-title a:hover {
   color: #0071e3;
 }
 
-.post-summary {
+.post-date {
+  display: block;
   font-size: 15px;
   color: #86868b;
-  line-height: 1.5;
   margin-bottom: 12px;
 }
 
-/* ===== Tags ===== */
-.post-tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.tag-link {
-  font-size: 13px;
-  color: #0071e3;
-  text-decoration: none;
-  background: rgba(0, 113, 227, 0.08);
-  padding: 3px 10px;
-  border-radius: 8px;
-  transition: background 0.2s ease;
-}
-
-.tag-link:hover {
-  background: rgba(0, 113, 227, 0.18);
+.post-summary {
+  font-size: 17px;
+  color: #86868b;
+  line-height: 1.5;
 }
 
 /* ===== Single Post ===== */
@@ -259,20 +111,11 @@ main {
   margin-bottom: 40px;
 }
 
-.post-hero {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: 16px;
-  margin-bottom: 28px;
-}
-
 .post-title-single {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.15;
-  margin-top: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   text-wrap: balance;
 }
 
@@ -293,6 +136,23 @@ main {
   display: block;
 }
 
+.post-content p img {
+  display: inline-block;
+  margin: 0.5em;
+}
+
+/* Two images side by side */
+.post-content p:has(img + img) {
+  display: flex;
+  gap: 12px;
+}
+
+.post-content p:has(img + img) img {
+  flex: 1;
+  min-width: 0;
+  margin: 0.5em 0;
+}
+
 .post-content h2 {
   font-size: 24px;
   font-weight: 600;
@@ -310,6 +170,7 @@ main {
 .post-content a {
   color: #0071e3;
   text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .post-content a:hover {
@@ -368,7 +229,6 @@ main {
 }
 
 .post-content pre {
-  position: relative;
   background: #f5f5f7;
   border-radius: 12px;
   padding: 20px 24px;
@@ -383,43 +243,17 @@ main {
   border-radius: 0;
 }
 
-/* ===== Copy Button ===== */
-.copy-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 4px 12px;
-  font-size: 12px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #86868b;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid #d2d2d7;
-  border-radius: 6px;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.2s ease, color 0.2s ease;
-}
-
-.post-content pre:hover .copy-btn {
-  opacity: 1;
-}
-
-.copy-btn:hover {
-  color: #0071e3;
-  border-color: #0071e3;
-}
-
 /* ===== Post Back Link ===== */
 .post-back {
   margin-top: 64px;
   padding-top: 24px;
-  border-top: 1px solid #e8e8ed;
 }
 
 .post-back a {
   color: #86868b;
   text-decoration: none;
   font-size: 15px;
+  transition: color 0.2s ease;
 }
 
 .post-back a:hover {
@@ -428,31 +262,11 @@ main {
 
 /* ===== Footer ===== */
 .site-footer {
-  max-width: 720px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 0 24px 40px;
+  padding: 0 24px 32px;
   font-size: 14px;
   color: #86868b;
-  text-align: center;
-}
-
-.footer-social {
-  margin-bottom: 12px;
-}
-
-.footer-social a {
-  color: #86868b;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-social a:hover {
-  color: #0071e3;
-}
-
-.footer-dot {
-  margin: 0 8px;
-  color: #d2d2d7;
 }
 
 /* ===== Pagination ===== */
@@ -466,112 +280,19 @@ main {
 .pagination a {
   color: #86868b;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .pagination a:hover {
   color: #0071e3;
 }
 
-/* ===== Back to Top ===== */
-.back-to-top {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(29, 29, 31, 0.8);
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.2s ease;
-  transform: translateY(8px);
-  z-index: 99;
-  backdrop-filter: blur(10px);
-}
-
-.back-to-top.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.back-to-top:hover {
-  transform: translateY(-2px);
-  background: #1d1d1f;
-}
-
 /* ===== About Page ===== */
-.about-page h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
 .about-page p {
   margin-bottom: 1em;
-  font-size: 17px;
-  line-height: 1.6;
 }
 
 .about-page a {
   color: #0071e3;
   text-decoration: none;
-}
-
-/* ===== Tags Listing Page ===== */
-.tags-page h2 {
-  font-size: 28px;
-  margin-bottom: 24px;
-}
-
-.tags-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 40px;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 640px) {
-  #search-input {
-    width: 120px;
-  }
-
-  #search-input:focus {
-    width: 160px;
-  }
-
-  .search-results {
-    width: 280px;
-  }
-
-  .post-title-single {
-    font-size: 30px;
-  }
-
-  .post-item {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .post-cover {
-    width: 100%;
-    height: 200px;
-  }
-
-  .post-title {
-    font-size: 22px;
-  }
-
-  .post-content pre {
-    padding: 16px;
-    font-size: 13px;
-  }
-
-  .back-to-top {
-    right: 16px;
-    bottom: 16px;
-  }
 }

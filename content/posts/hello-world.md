@@ -3,8 +3,6 @@ title: "Hello, World"
 date: 2026-05-12
 draft: false
 summary: "博客的第一篇文章。从这里开始，记录 Unity 开发的深度思考。"
-cover: "https://picsum.photos/seed/unitydev/800/400"
-tags: ["Unity"]
 ---
 
 欢迎来到我的技术博客。

@@ -2,9 +2,6 @@ baseURL = "https://mortal-xj.github.io/"
 locale = "zh-cn"
 title = "Mortal-XJ"
 
-[taxonomies]
-  tag = "tags"
-
 [pagination]
   pagerSize = 10
 
@@ -13,8 +10,3 @@ title = "Mortal-XJ"
     style = "github"
   [markup.goldmark.renderer]
     unsafe = true
-
-[outputs]
-  home = ["HTML", "JSON"]
-  section = ["HTML"]
-  page = ["HTML"]

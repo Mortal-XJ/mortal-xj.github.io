@@ -3,8 +3,6 @@ title: "ECS 架构实战：从 OOP 到数据导向设计"
 date: 2026-05-09
 draft: false
 summary: "通过一个完整的案例，演示如何将传统面向对象的游戏架构重构为 ECS，理解数据导向设计的核心思想。"
-cover: "https://picsum.photos/seed/ecsarch/800/400"
-tags: ["Unity", "ECS", "Architecture"]
 ---
 
 ![ECS 架构示意图](https://picsum.photos/seed/ecs/800/400)

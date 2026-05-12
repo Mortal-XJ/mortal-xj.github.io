@@ -3,8 +3,6 @@ title: "深入 SRP：构建自定义渲染管线"
 date: 2026-05-10
 draft: false
 summary: "从零理解 Scriptable Render Pipeline 的架构设计，实现自定义渲染 Pass，掌握剔除、绘制与后处理的完整流程。"
-cover: "https://picsum.photos/seed/srp/800/400"
-tags: ["Unity", "SRP", "Rendering"]
 ---
 
 Unity 的可编程渲染管线（SRP）是近年来最重要的架构变革之一。它不是换个 API 那么简单——它把渲染的控制权从引擎黑盒交还给了开发者。

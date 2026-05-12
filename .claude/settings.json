@@ -6,7 +6,13 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://mortal-xj.github.io/tags/)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://mortal-xj.github.io/posts/unity-dots-job-system-performance/)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://mortal-xj.github.io/tags/)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://mortal-xj.github.io/tags/unity/)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://mortal-xj.github.io/tags/unity/)",
+      "Bash(GIT_SSL_NO_VERIFY=0 git push origin main)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://github.com --connect-timeout 10)",
+      "Bash(cmd.exe /c \"netsh winhttp show proxy\")",
+      "Bash(nslookup github.com)",
+      "Bash(curl -4 -s -o /dev/null -w \"%{http_code}\" https://github.com --connect-timeout 15)",
+      "Bash(git config *)"
     ]
   }
 }
