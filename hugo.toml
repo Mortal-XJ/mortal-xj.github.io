@@ -1,0 +1,12 @@
+baseURL = "https://71588.github.io/"
+locale = "zh-cn"
+title = "71588"
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.highlight]
+    style = "github"
+  [markup.goldmark.renderer]
+    unsafe = true
