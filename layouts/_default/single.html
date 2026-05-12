@@ -1,11 +1,24 @@
 {{ define "main" }}
 <article class="single-post">
   <header class="post-header">
+    {{ with .Params.cover }}
+    <img src="{{ . }}" alt="{{ $.Title }}" class="post-hero">
+    {{ end }}
+    <div class="post-meta-top">
+      <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format "2006-01-02" }}
+      </time>
+      {{ if ne .Type "page" }}
+      <span class="post-reading-time">{{ .ReadingTime }} min read</span>
+      {{ end }}
+    </div>
     <h1 class="post-title-single">{{ .Title }}</h1>
-    {{ if ne .Type "page" }}
-    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
-      {{ .Date.Format "2006-01-02" }}
-    </time>
+    {{ with .Params.tags }}
+    <div class="post-tags">
+      {{ range . }}
+      <a href="/tags/{{ . | urlize }}/" class="tag-link">{{ . }}</a>
+      {{ end }}
+    </div>
     {{ end }}
   </header>
   <div class="post-content">

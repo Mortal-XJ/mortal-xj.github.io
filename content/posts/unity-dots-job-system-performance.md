@@ -3,6 +3,8 @@ title: "DOTS 实战：Job System + Burst 性能优化指南"
 date: 2026-05-11
 draft: false
 summary: "从传统 MonoBehaviour 到 ECS + Job System 的迁移实践，实测 10000 个实体的性能对比与优化策略。"
+cover: "https://picsum.photos/seed/dots/800/400"
+tags: ["Unity", "DOTS", "ECS", "Performance"]
 ---
 
 这篇文章不谈概念，只讲落地。我们将从一个真实的性能瓶颈场景出发，逐步优化，记录每一步的数据。

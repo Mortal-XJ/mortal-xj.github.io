@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://mortal-xj.github.io/posts/blog-style-showcase/)"
+    ]
+  }
+}

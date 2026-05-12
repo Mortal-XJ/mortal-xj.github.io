@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="home">
+  <h2 class="tag-header">#{{ .Title }}</h2>
+  {{ range .Pages }}
+  <article class="post-item">
+    {{ with .Params.cover }}
+    <a href="{{ $.RelPermalink }}" class="post-cover-link">
+      <img src="{{ . }}" alt="{{ $.Title }}" class="post-cover" loading="lazy">
+    </a>
+    {{ end }}
+    <div class="post-item-body">
+      <div class="post-meta-top">
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "2006-01-02" }}
+        </time>
+        <span class="post-reading-time">{{ .ReadingTime }} min read</span>
+      </div>
+      <h2 class="post-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+    </div>
+  </article>
+  {{ end }}
+</div>
+{{ end }}

@@ -3,6 +3,8 @@ title: "博客样式展示：图片、表格与排版测试"
 date: 2026-05-08
 draft: false
 summary: "一篇展示博客所有排版能力的文章——图片混排、代码高亮、表格、引用、列表。"
+cover: "https://picsum.photos/seed/showcase/800/400"
+tags: ["Meta"]
 ---
 
 这篇文章覆盖了技术博客中常见的排版元素，作为样式参考。

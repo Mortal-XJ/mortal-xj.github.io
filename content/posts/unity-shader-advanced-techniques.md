@@ -3,6 +3,8 @@ title: "Shader 进阶：从表面着色器到自定义 HLSL"
 date: 2026-05-12
 draft: false
 summary: "告别 Shader Graph 黑盒，深入 HLSL 编写自定义光照模型、屏幕空间效果和 GPU Instancing 优化。"
+cover: "https://picsum.photos/seed/shader/800/400"
+tags: ["Unity", "Shader", "HLSL", "Rendering"]
 ---
 
 Shader 是图形程序员的必修课。Shader Graph 拖节点能解决 80% 的需求，但剩下的 20%——自定义光照、屏幕空间效果、极致性能优化——需要你直面 HLSL。

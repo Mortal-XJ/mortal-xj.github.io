@@ -1,3 +1,4 @@
+
 # Personal Tech Blog — Design Spec
 
 **Date:** 2026-05-12
