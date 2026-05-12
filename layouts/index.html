@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="home">
-  {{ range .Paginator.Pages }}
+  {{ range where .Paginator.Pages "Section" "posts" }}
   <article class="post-item">
     <h2 class="post-title">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
